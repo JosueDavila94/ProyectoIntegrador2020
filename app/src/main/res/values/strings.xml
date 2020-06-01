@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BuskoEmpleo</string>
+    <string name="txtUsuario">Usuario</string>
+    <string name="txtPassword">Contraseña</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="btnOlvidePwd">¿Olvidaste la contraseña?</string>
+    <string name="textoRegistrar">¿No tiene un usuario creado? Regístrese aquí</string>
+    <string name="lblVersion">Versión 1.0</string>
 </resources>
