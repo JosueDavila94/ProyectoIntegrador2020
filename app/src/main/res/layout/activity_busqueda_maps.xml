@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityListadoEmpleos">
+    tools:context=".ActivityBusquedaMaps">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/LayoutHeader"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/LayoutHeader">
 
         <TextView
-            android:id="@+id/tituloEmpleos"
+            android:id="@+id/tituloBusquedaMaps"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -63,7 +63,7 @@
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
             android:fontFamily="@font/baloo"
-            android:text="@string/tituloEmpleos"
+            android:text="@string/tituloBusquedaMaps"
             android:textColor="@android:color/black"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -83,18 +83,6 @@
         app:layout_constraintVertical_bias="0.0">
 
         <ImageButton
-            android:id="@+id/btnEmpleos"
-            android:layout_width="135dp"
-            android:layout_height="135dp"
-            android:layout_marginStart="2dp"
-            android:layout_marginLeft="2dp"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/listado" />
-
-        <ImageButton
             android:id="@+id/btnBusqueda"
             android:layout_width="135dp"
             android:layout_height="135dp"
@@ -105,6 +93,18 @@
             app:layout_constraintStart_toEndOf="@+id/btnEmpleos"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/search" />
+
+        <ImageButton
+            android:id="@+id/btnEmpleos"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/listado" />
 
         <ImageButton
             android:id="@+id/btnBusquedaMaps"

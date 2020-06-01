@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class ActivityListadoEmpleos extends AppCompatActivity {
+public class ActivityBusqueda extends AppCompatActivity {
 
     private ImageButton botonEmpleos, botonBusqueda, botonBusquedaMaps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listado_empleos);
+        setContentView(R.layout.activity_busqueda);
 
         botonEmpleos = findViewById(R.id.btnEmpleos);
         botonEmpleos.setOnClickListener(new View.OnClickListener() {
