@@ -6,9 +6,18 @@
     <string name="btnOlvidePwd">¿Olvidaste la contraseña?</string>
     <string name="textoRegistrar">¿No tiene un usuario creado? Regístrese aquí</string>
     <string name="lblVersion">Versión 1.0</string>
+
     <string name="tituloEmpleos">Empleos\nDisponibles</string>
 
     <string name="tituloBusqueda">Búsqueda\nde Empleos</string>
+    <string name="txtBusqueda">Buscar por palabras clave</string>
+    <string name="txtFiltros">Filtrar por:</string>
+    <string name="cbxTec">Tecnología</string>
+    <string name="cbxAdm">Administración</string>
+    <string name="cbxEdu">Educación</string>
+    <string name="cbxIng">Ingeniería</string>
+    <string name="cbxTrans">Transporte</string>
+    <string name="cbxTrad">Traducción</string>
 
     <string name="tituloBusquedaMaps">Búsqueda\npor Localización</string>
 </resources>
