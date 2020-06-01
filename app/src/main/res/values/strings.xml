@@ -20,4 +20,5 @@
     <string name="cbxTrad">Traducción</string>
 
     <string name="tituloBusquedaMaps">Búsqueda\npor Localización</string>
+    <string name="txtBusquedaMaps">Ingresa ciudad y distrito:</string>
 </resources>

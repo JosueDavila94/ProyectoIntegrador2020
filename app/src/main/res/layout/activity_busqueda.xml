@@ -71,7 +71,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <android.support.constraint.ConstraintLayout
-            android:id="@+id/constraintLayout2"
+            android:id="@+id/LayoutBusqueda"
             android:layout_width="0dp"
             android:layout_height="84dp"
             android:layout_marginStart="24dp"
@@ -85,7 +85,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tituloBusqueda">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/lblBusquedaMaps"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -98,7 +98,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/txtBusquedaClave"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -110,7 +110,7 @@
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintTop_toBottomOf="@+id/lblBusquedaMaps" />
 
             <Button
                 android:id="@+id/button"
@@ -120,11 +120,12 @@
                 android:textAllCaps="false"
                 android:textSize="10sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintStart_toEndOf="@+id/txtBusquedaClave"
+                app:layout_constraintTop_toBottomOf="@+id/lblBusquedaMaps" />
         </android.support.constraint.ConstraintLayout>
 
         <android.support.constraint.ConstraintLayout
+            android:id="@+id/LayoutFiltros"
             android:layout_width="0dp"
             android:layout_height="167dp"
             android:layout_marginStart="24dp"
@@ -135,10 +136,10 @@
             android:background="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/LayoutBusqueda">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/lblFiltros"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -151,7 +152,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/cbxTecnologia"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -159,10 +160,10 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/cbxTec"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+                app:layout_constraintTop_toBottomOf="@+id/cbxEducacion" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/cbxIngenieria"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -170,10 +171,10 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/cbxIng"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+                app:layout_constraintTop_toBottomOf="@+id/cbxTecnologia" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/cbxEducacion"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -181,10 +182,10 @@
                 android:layout_marginTop="16dp"
                 android:text="@string/cbxEdu"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/lblFiltros" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/cbxTransporte"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="64dp"
@@ -192,11 +193,11 @@
                 android:layout_marginTop="16dp"
                 android:text="@string/cbxTrans"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/checkBox3"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintStart_toEndOf="@+id/cbxEducacion"
+                app:layout_constraintTop_toBottomOf="@+id/lblFiltros" />
 
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/cbxAdministracion"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="64dp"
@@ -204,11 +205,11 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/cbxAdm"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/checkBox"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+                app:layout_constraintStart_toEndOf="@+id/cbxTecnologia"
+                app:layout_constraintTop_toBottomOf="@+id/cbxTransporte" />
 
             <CheckBox
-                android:id="@+id/checkBox6"
+                android:id="@+id/cbxTraduccion"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="64dp"
@@ -216,8 +217,8 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/cbxTrad"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/checkBox2"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+                app:layout_constraintStart_toEndOf="@+id/cbxIngenieria"
+                app:layout_constraintTop_toBottomOf="@+id/cbxAdministracion" />
         </android.support.constraint.ConstraintLayout>
 
     </android.support.constraint.ConstraintLayout>

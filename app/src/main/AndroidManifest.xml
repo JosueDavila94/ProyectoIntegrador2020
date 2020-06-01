@@ -12,7 +12,7 @@
         <activity android:name=".ActivityBusquedaMaps"></activity>
         <activity android:name=".ActivityBusqueda" />
         <activity android:name=".ActivityListadoEmpleos" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
