@@ -33,10 +33,14 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/chatbot" />
 
-        <ImageView
-            android:id="@+id/imgLogout"
-            android:layout_width="67dp"
-            android:layout_height="78dp"
+        <ImageButton
+            android:id="@+id/btnLogout"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:scaleType="fitXY"
+            android:background="@null"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imgChatbotSmall"
             app:layout_constraintTop_toTopOf="parent"
@@ -127,7 +131,7 @@
         <android.support.constraint.ConstraintLayout
             android:id="@+id/LayoutFiltros"
             android:layout_width="0dp"
-            android:layout_height="167dp"
+            android:layout_height="175dp"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
             android:layout_marginTop="24dp"
@@ -158,7 +162,9 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="8dp"
+                android:buttonTint="@android:color/black"
                 android:text="@string/cbxTec"
+                android:textColor="@android:color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cbxEducacion" />
 
@@ -169,7 +175,9 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="8dp"
+                android:buttonTint="@android:color/black"
                 android:text="@string/cbxIng"
+                android:textColor="@android:color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cbxTecnologia" />
 
@@ -180,7 +188,9 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="16dp"
+                android:buttonTint="@android:color/black"
                 android:text="@string/cbxEdu"
+                android:textColor="@android:color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/lblFiltros" />
 
@@ -191,7 +201,9 @@
                 android:layout_marginStart="64dp"
                 android:layout_marginLeft="64dp"
                 android:layout_marginTop="16dp"
+                android:buttonTint="@android:color/black"
                 android:text="@string/cbxTrans"
+                android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cbxEducacion"
                 app:layout_constraintTop_toBottomOf="@+id/lblFiltros" />
@@ -203,7 +215,9 @@
                 android:layout_marginStart="64dp"
                 android:layout_marginLeft="64dp"
                 android:layout_marginTop="8dp"
+                android:buttonTint="@android:color/black"
                 android:text="@string/cbxAdm"
+                android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cbxTecnologia"
                 app:layout_constraintTop_toBottomOf="@+id/cbxTransporte" />
@@ -215,7 +229,9 @@
                 android:layout_marginStart="64dp"
                 android:layout_marginLeft="64dp"
                 android:layout_marginTop="8dp"
+                android:buttonTint="@android:color/black"
                 android:text="@string/cbxTrad"
+                android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cbxIngenieria"
                 app:layout_constraintTop_toBottomOf="@+id/cbxAdministracion" />
@@ -227,6 +243,7 @@
         android:id="@+id/LayoutFooter"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -240,6 +257,7 @@
             android:layout_height="135dp"
             android:layout_marginStart="1dp"
             android:layout_marginLeft="1dp"
+            android:background="@null"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnEmpleos"
@@ -252,6 +270,7 @@
             android:layout_height="135dp"
             android:layout_marginStart="2dp"
             android:layout_marginLeft="2dp"
+            android:background="@null"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -262,6 +281,7 @@
             android:id="@+id/btnBusquedaMaps"
             android:layout_width="135dp"
             android:layout_height="135dp"
+            android:background="@null"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 
 public class ActivityBusquedaMaps extends AppCompatActivity {
 
-    private ImageButton botonEmpleos, botonBusqueda;
+    private ImageButton botonEmpleos, botonBusqueda, botonLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,14 @@ public class ActivityBusquedaMaps extends AppCompatActivity {
                 AbrirActivityBusqueda();
             }
         });
+
+        botonLogout = findViewById(R.id.btnLogout);
+        botonLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CerrarSesion();
+            }
+        });
     }
 
     public void AbrirActivityEmpleos(){
@@ -39,6 +47,11 @@ public class ActivityBusquedaMaps extends AppCompatActivity {
 
     public void AbrirActivityBusqueda(){
         Intent intent = new Intent(this, ActivityBusqueda.class);
+        startActivity(intent);
+    }
+
+    public void CerrarSesion(){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
