@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 
 public class ActivityBusqueda extends AppCompatActivity {
 
-    private ImageButton botonEmpleos, botonBusqueda, botonBusquedaMaps;
+    private ImageButton botonEmpleos, botonBusquedaMaps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +23,6 @@ public class ActivityBusqueda extends AppCompatActivity {
             }
         });
 
-        botonBusqueda = findViewById(R.id.btnBusqueda);
-        botonBusqueda.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AbrirActivityBusqueda();
-            }
-        });
-
         botonBusquedaMaps = findViewById(R.id.btnBusquedaMaps);
         botonBusquedaMaps.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,11 +34,6 @@ public class ActivityBusqueda extends AppCompatActivity {
 
     public void AbrirActivityEmpleos(){
         Intent intent = new Intent(this, ActivityListadoEmpleos.class);
-        startActivity(intent);
-    }
-
-    public void AbrirActivityBusqueda(){
-        Intent intent = new Intent(this, ActivityBusqueda.class);
         startActivity(intent);
     }
 

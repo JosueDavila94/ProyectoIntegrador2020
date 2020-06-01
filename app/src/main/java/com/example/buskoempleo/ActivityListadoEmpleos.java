@@ -8,20 +8,12 @@ import android.widget.ImageButton;
 
 public class ActivityListadoEmpleos extends AppCompatActivity {
 
-    private ImageButton botonEmpleos, botonBusqueda, botonBusquedaMaps;
+    private ImageButton botonBusqueda, botonBusquedaMaps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listado_empleos);
-
-        botonEmpleos = findViewById(R.id.btnEmpleos);
-        botonEmpleos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AbrirActivityEmpleos();
-            }
-        });
 
         botonBusqueda = findViewById(R.id.btnBusqueda);
         botonBusqueda.setOnClickListener(new View.OnClickListener() {
@@ -38,11 +30,6 @@ public class ActivityListadoEmpleos extends AppCompatActivity {
                 AbrirActivityBusquedaMaps();
             }
         });
-    }
-
-    public void AbrirActivityEmpleos(){
-        Intent intent = new Intent(this, ActivityListadoEmpleos.class);
-        startActivity(intent);
     }
 
     public void AbrirActivityBusqueda(){
